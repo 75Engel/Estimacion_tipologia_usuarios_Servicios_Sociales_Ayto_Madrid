@@ -1,0 +1,39 @@
+Distrito;Distrito_L;Centro;Centro_L;Trabajadores sociales PA;Trabajadores sociales Zona
+01;Centro;71;CSS Maravillas;2;6
+01;Centro;70;CSS Puerta de Toledo;3;11
+02;Arganzuela;69;CSS José Villarreal;2;11
+03;Retiro;72;CSS Retiro;3;6
+04;Salamanca;73;CSS Guindalera;3;10
+05;Chamartín;74;CSS Santa Hortensia;3;7
+06;Tetuan;75;CSS María Zayas;3;8
+06;Tetuan;101;CSS Vicente Ferrer;2;7
+07;Chamberí;76;CSS Marta Esquivias Tallada;3;12
+08;Fuencarral-El pardo;77;CSS Badalona;2;8
+08;Fuencarral-El pardo;102;CSS San Vicente de Paúl;1;7
+09;Moncloa-Aravaca;78;CSS Dehesa de la Villa;2;4
+09;Moncloa-Aravaca;104;CSS Infante Don Juan ;1;4
+10;Latina;106;CSS Fuerte de Navidad;4;9
+10;Latina;79;CSS Los Yébenes;4;7
+10;Latina;80;CSS Gallur;3;9
+11;Carabanchel;81;CSS Plaza Elíptica;2;7
+11;Carabanchel;83;CSS Zaida;4;14
+11;Carabanchel;82;CSS Monseñor Óscar Romero;2;9
+12;Usera;85;CSS Loyola de Palacio;2;10
+12;Usera;84;CSS San Filiberto;3;15
+13;Puente de Vallecas;89;CSS Ramón Pérez De Ayala;5;6
+13;Puente de Vallecas;87;CSS Entrevías;2;7
+13;Puente de Vallecas;98;CSS Pablo Neruda;3;8
+13;Puente de Vallecas;86;CSS San Diego;3;9
+14;Moratalaz;90;CSS Fuente Carrantona;3;9
+15;Ciudad Lineal;91;CSS Luis Vives;5;15
+15;Ciudad Lineal;108;CSS Santa Felicidad;1;5
+16;Hortaleza;92;CSS Concepción Arenal;3;8
+16;Hortaleza;130;CSS El Querol;1;5
+17;Villaverde;93;CSS Huerta de Villaverde;3;12
+17;Villaverde;103;CSS Eduardo Minguito;1;9
+18;Villa de Vallecas;94;CSS Villa de Vallecas;2;6
+19;Vicalvaro;95;CSS Calahorra;2;5
+19;Vicalvaro;96;CSS Valdebernardo;2;6
+20;San Blas-Canillejas;98;CSS Pablo Casals;2;9
+20;San Blas-Canillejas;97;CSS Torre Arias;3;9
+21;Barajas;99;CSS Teresa de Calcuta;2;4
