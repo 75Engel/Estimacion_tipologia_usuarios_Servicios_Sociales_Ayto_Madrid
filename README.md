@@ -8,7 +8,7 @@ En el Ayto. de Madrid se consideran 5 posibles mótivos de urgencia. Estos son:
 
   >Malos tratos       
   >Abandono  
-  >Alojamiento/Vivienda 
+  >Alojamiento/Vivienda
   >Desprotección social problema salud  
   >Desprotección socio-familiar 
 
@@ -33,6 +33,7 @@ Los datos obtenidos han sido a través de diferentes Datasets publicados en el _
 
 Este último año no está completo a pesar que se debería de actualizar trimestralmente la información presentada en este portal. Los datos que se disponen son únicamente hasta el mes de julio.
   >[Urgencias atendidas desde los Servicios Sociales del Ayuntamiento de Madrid][Data_1]
+
   >[Estructura del conjunto de datos][Data_2]
 
 
