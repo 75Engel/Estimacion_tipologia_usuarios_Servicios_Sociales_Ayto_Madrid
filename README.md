@@ -6,10 +6,14 @@ Usando como base la información recabada y no utilizada en mi anterior estudio 
 
 En el Ayto. de Madrid se consideran 5 posibles mótivos de urgencia. Estos son:
 
-  >Malos tratos       
+  >Malos tratos
+
   >Abandono  
+  
   >Alojamiento/Vivienda
+  
   >Desprotección social problema salud  
+  
   >Desprotección socio-familiar 
 
 
