@@ -21,19 +21,19 @@ En el Ayto. de Madrid se consideran 5 posibles mótivos de urgencia. Estos son:
 
 ### Qué pretendemos obtener: 
 
-Con este estudio queremos ver si es posible establecer una relación entre los casos que se suceden y poder hacer una previsión de cada tipo de urgencia que se atiende en periodos venideros, así como observar si hay algún tipo de relación con las diferentes variables demográficas y la tipología de estas urgencias.
+Con este estudio queremos ver si es posible __establecer una relación__ entre los casos que se suceden y diferentes variables y poder __realizar una previsión__ de cada tipo de urgencia que se atiende para periodos venideros.
 
-Dada el limitado espacio de tiempo de los Datasets que se tienen, vamos a realizar un estudio trimestral de los datos para tener más valores de las variables tiempo.
+Dada el limitado espacio de tiempo de los Datasets que se tienen, vamos a realizar un __estudio trimestral__ de los datos para tener más valores de las variable __tiempo__, que es una de las diferentes variables que se consideran en este proceso. 
 
-La variable tiempo es una de las diferentes variables que se consideran en este proceso. Otras variables que planteamos como variables independientes serían distrito, sexo, nacionalidad y el rango de la edad de los usuarios que realizan la gestión de la urgencia.
+Otras variables que planteamos como variables independientes serían __distrito, sexo, nacionalidad y el rango de la edad__ de los usuarios que realizan la gestión de la urgencia.
 
-La variable dependiente u objetivo sería la tipología del caso.
+La __variable dependiente u objetivo__ sería la tipología del caso.
 
 
 ***
 
 ### Datos utilizados:
-Los datos obtenidos han sido a través de diferentes Datasets publicados en el __portal de Datos Abiertos del Ayuntamiento de Madrid__ desde  el año  2018 hasta el 2021.
+Los datos obtenidos han sido a través de un Dataset publicado en el __portal de Datos Abiertos del Ayuntamiento de Madrid__ desde  el año  2018 hasta el 2021.
 
 Este último año no está completo a pesar que se debería de actualizar trimestralmente la información presentada en este portal. Los datos que se disponen son únicamente hasta el mes de julio.
   >[Urgencias atendidas desde los Servicios Sociales del Ayuntamiento de Madrid][Data_1]
