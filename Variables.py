@@ -1,5 +1,8 @@
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.linear_model import LogisticRegression         #   este modelo falta por añadir
+from sklearn.ensemble import BaggingClassifier,RandomForestClassifier,AdaBoostClassifier,GradientBoostingClassifier
+from xgboost import XGBRFClassifier 
 
 
 train=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_train.csv',sep=',')
@@ -10,4 +13,21 @@ X_train=train[['Código Distrito Centro','Age_range_code','Nationality_code','Se
 y_test=test['Código Tipo Supuesto Urgente']
 y_train=train['Código Tipo Supuesto Urgente']
 
-tree_reg = DecisionTreeClassifier(random_state=20)
+seed= 20
+
+tree_reg = DecisionTreeClassifier(random_state=seed)
+
+rnd_clf = RandomForestClassifier(random_state=seed)
+
+estimator = DecisionTreeClassifier(max_depth=10,random_state=seed)
+
+bag_clf = BaggingClassifier(base_estimator = estimator,random_state=seed)
+
+ada_clf = AdaBoostClassifier(base_estimator = estimator,
+                             random_state=seed)
+
+gbct = GradientBoostingClassifier(random_state=seed)
+
+xgb_clas = XGBRFClassifier(n_estimators=100, random_state=seed)
+
+logreg = LogisticRegression(max_iter=10000)
