@@ -15,12 +15,12 @@ def save_files(model):
     file=path+name+date+'.pickle'
     pickle.dump(model,open(file,'wb'))
 
-def load_files(file):
+def load_files(file,name):
     '''
     Cargar modelos con formato binario en un notebook o fichero python
     '''
-
-    model = pickle.load( open( "file", "rb" ) )
+    os.chdir('E:/Bootcamp_22/Javier/Repositorios/Machine_Learning/model')
+    name = pickle.load( open( file, "rb" ) )
 
 def error_modelo(model):
     '''

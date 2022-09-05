@@ -3,7 +3,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression         #   este modelo falta por añadir
 from sklearn.ensemble import BaggingClassifier,RandomForestClassifier,AdaBoostClassifier,GradientBoostingClassifier
 from xgboost import XGBRFClassifier 
-
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.preprocessing import MinMaxScaler
 
 train=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_train.csv',sep=',')
 test=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_test.csv',sep=',')
@@ -32,4 +33,8 @@ xgb_clas = XGBRFClassifier(n_estimators=100, random_state=seed)
 
 logreg = LogisticRegression(max_iter=10000)
 
-lista_modelos=[tree_reg,rnd_clf,bag_clf,ada_clf,gbct,logreg]
+knn = KNeighborsClassifier(n_neighbors=5)
+
+
+lista_modelos=[tree_reg,rnd_clf,bag_clf,ada_clf,gbct,logreg,knn]
+lista_abr_modelos=['DTC','RND','BAG','ADA','GBCT','LOGREG','KNN']
