@@ -9,6 +9,13 @@ from sklearn.preprocessing import MinMaxScaler
 train=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_train.csv',sep=',')
 test=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_test.csv',sep=',')
 
+'''
+Ficheros para modelar en DataFrames con resample
+'''
+train=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_train_balanced',sep=',')
+test=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_test_balanced',sep=',')
+
+
 X_test=test[['Código Distrito Centro','Age_range_code','Nationality_code','Sex_code','year']]
 X_train=train[['Código Distrito Centro','Age_range_code','Nationality_code','Sex_code','year']]
 y_test=test['Código Tipo Supuesto Urgente']

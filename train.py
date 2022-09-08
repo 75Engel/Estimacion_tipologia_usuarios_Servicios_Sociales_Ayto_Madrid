@@ -5,7 +5,7 @@ import numpy as np
 import pickle 
 from datetime import datetime
 from Utils import functions as fn
-from Utils import Variables as var
+import Variables as var
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score,precision_score,recall_score,roc_auc_score,f1_score,confusion_matrix,r2_score
