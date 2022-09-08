@@ -4,6 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score,precision_score,recall_score,roc_auc_score,f1_score,confusion_matrix
 import Variables as var
+import os
 
 def save_files(model):
     '''
@@ -15,24 +16,24 @@ def save_files(model):
     file=path+name+date+'.pickle'
     pickle.dump(model,open(file,'wb'))
 
-def load_files(file,name):
+def load_files(file,name_file):
     '''
     Cargar modelos con formato binario en un notebook o fichero python
     '''
     os.chdir('E:/Bootcamp_22/Javier/Repositorios/Machine_Learning/model')
-    name = pickle.load( open( file, "rb" ) )
+    name_file = pickle.load( open( file, "rb" ) )
 
-def error_modelo(model):
+def error_modelo (model,X,y) :
     '''
     Dejamos grabada cada uno de los parámetros de cada modelo y hacemos su representación
     '''
-    y_pred = model.predict(var.X_test)
-    acc_model=accuracy_score(var.y_test, y_pred)
-    precision_model=precision_score(var.y_test, y_pred,average='micro')
-    recall_model=recall_score(var.y_test, y_pred,average='micro')
-    roc_auc_model=roc_auc_score(var.y_test, model.predict_proba(var.X_test),multi_class='ovr')
-    f1_model=f1_score(var.y_test, y_pred,average='micro')
-    conf_model=confusion_matrix(var.y_test, y_pred, normalize='true')
+    y_pred = model.predict(X)
+    acc_model=accuracy_score(y, y_pred)
+    precision_model=precision_score(y, y_pred,average='micro')
+    recall_model=recall_score(y, y_pred,average='micro')
+    roc_auc_model=roc_auc_score(y, model.predict_proba(X),multi_class='ovr')
+    f1_model=f1_score(y, y_pred,average='micro')
+    conf_model=confusion_matrix(y, y_pred, normalize='true')
     print('Accuracy', acc_model)
     print('Precision', precision_model)
     print('Recall', recall_model)
@@ -40,7 +41,9 @@ def error_modelo(model):
     print('F1', f1_model)
 
     plt.figure(figsize=(10,10))
-    sns.heatmap(conf_model, annot=True)
+    sns.heatmap(conf_model, annot=True);
+
+    return f1_model,precision_model,recall_model,acc_model
 
 def errores_modelos(lista_modelos:list): 
     '''
