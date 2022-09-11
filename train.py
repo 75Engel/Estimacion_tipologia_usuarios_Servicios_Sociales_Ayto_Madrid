@@ -5,7 +5,8 @@ import numpy as np
 import pickle 
 from datetime import datetime
 from Utils import functions as fn
-import Variables as var
+#import Variables as var                    #           Esta linea está en el fichero porque a veces me da error que no localiza el fichero Variables
+from Utils import Variables as var
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score,precision_score,recall_score,roc_auc_score,f1_score,confusion_matrix,r2_score
@@ -30,8 +31,8 @@ fn.save_files(var.gbct)
 var.logreg.fit(var.X_train, var.y_train)
 fn.save_files(var.logreg)
 
-var.xgb_clas.fit(var.X_train, var.y_train)             #Revisar en  notebook
-fn.save_files(var.xgb_clas)
+#var.xgb_clas.fit(var.X_train, var.y_train)             #Revisar en  notebook
+#fn.save_files(var.xgb_clas)
 
 scaler = MinMaxScaler()
 X_train_scaler=scaler.fit_transform(var.X_train)
