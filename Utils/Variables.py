@@ -10,18 +10,19 @@ from sklearn.preprocessing import MinMaxScaler
 Ficheros para modelar en DataFrames sin resample
 '''
 
-train=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_train.csv',sep=',')
-test=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_test.csv',sep=',')
+#train=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_train.csv',sep=',')
+#test=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_test.csv',sep=',')
 
 '''
 Ficheros para modelar en DataFrames con resample
 '''
-#train=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_train_balanced',sep=',')
-#test=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_test_balanced',sep=',')
+train=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_train_balanced.csv',sep=',')
+test=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_test_balanced.csv',sep=',')
 
 
-X_test=test[['Código Distrito Centro','Age_range_code','Nationality_code','Sex_code']]
-X_train=train[['Código Distrito Centro','Age_range_code','Nationality_code','Sex_code']]
+
+X_test=test[['Código Distrito Centro','Age_range_code','Nationality_code','Sexo_code']]
+X_train=train[['Código Distrito Centro','Age_range_code','Nationality_code','Sexo_code']]
 y_test=test['Código Tipo Supuesto Urgente']
 y_train=train['Código Tipo Supuesto Urgente']
 

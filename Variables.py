@@ -16,8 +16,8 @@ train=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_t
 test=pd.read_csv('E:\\Bootcamp_22\\Javier\\Repositorios\\Machine_Learning\\data\df_test_balanced.csv',sep=',')
 
 
-X_test=test[['Código Distrito Centro','Age_range_code','Nationality_code','Sex_code','year']]
-X_train=train[['Código Distrito Centro','Age_range_code','Nationality_code','Sex_code','year']]
+X_test=test[['Código Distrito Centro','Age_range_code','Nationality_code','Sexo_code']]
+X_train=train[['Código Distrito Centro','Age_range_code','Nationality_code','Sexo_code']]
 y_test=test['Código Tipo Supuesto Urgente']
 y_train=train['Código Tipo Supuesto Urgente']
 
