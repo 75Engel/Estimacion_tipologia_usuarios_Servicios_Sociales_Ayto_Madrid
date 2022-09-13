@@ -31,10 +31,10 @@ def error_modelo(model, X_test, y_test):
     Dejamos grabada cada uno de los parámetros de cada modelo y hacemos su representación
     '''
     y_pred = model.predict(X_test)
-    f1_model=f1_score(y_test, y_pred,average='micro')
+    f1_model=f1_score(y_test, y_pred,average='macro')
     acc_model=accuracy_score(y_test, y_pred)
-    precision_model=precision_score(y_test, y_pred,average='micro')
-    recall_model=recall_score(y_test, y_pred,average='micro')
+    precision_model=precision_score(y_test, y_pred,average='macro')
+    recall_model=recall_score(y_test, y_pred,average='macro')
     roc_auc_model=roc_auc_score(y_test, model.predict_proba(X_test),multi_class='ovr')
     conf_model=confusion_matrix(y_test, y_pred, normalize='true')
     model_error = {'accuracy': acc_model, 'f-1': f1_model, 'recall': recall_model , 'precision': precision_model}
