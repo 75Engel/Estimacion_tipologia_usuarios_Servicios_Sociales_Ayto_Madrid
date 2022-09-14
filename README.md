@@ -32,6 +32,20 @@ La __variable dependiente u objetivo__ sería la tipología del caso.
 
 ***
 
+### Qué vamos a realizar: 
+
+Primeramente vamos a realizar un __Análisis Exploratorio de datos__  para valorar cómo se commportan las posibles variables predictoras.
+
+Segundo realizaremos procesos de __ingeniería de datos__ para poder utilizar la información recabada y **realizar modelados**.
+
+Tercero, realizaremos modelados conjuntamente con ingeniería de datos para optimizar los primeros, midiendo **métricas** que permitan valorar una **variable objetivo multiclase**.
+
+
+Finalmente, procederemos a establecer la **importancia de las variables predictoras** en el módelo escogido.
+
+
+***
+
 ### Datos utilizados:
 Los datos obtenidos han sido a través de un Dataset publicado en el __portal de Datos Abiertos del Ayuntamiento de Madrid__ desde  el año  2018 hasta el 2021.
 
