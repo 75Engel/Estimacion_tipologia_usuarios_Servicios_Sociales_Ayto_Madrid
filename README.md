@@ -23,7 +23,7 @@ En el Ayto. de Madrid se consideran 5 posibles mótivos de urgencia. Estos son:
 
 Con este estudio queremos ver si es posible __establecer una relación__ entre los casos que se suceden y diferentes variables y poder __realizar una previsión__ de cada tipo de urgencia que se atiende para periodos venideros.
 
-Dada el limitado espacio de tiempo de los Datasets que se tienen, vamos a realizar un __estudio trimestral__ de los datos para tener más valores de las variable __tiempo__, que es una de las diferentes variables que se consideran en este proceso. 
+Dada el limitado espacio de tiempo de los Datasets que se tienen, vamos a realizar un __estudio exploratorio de los datos__ en relación con la variable __tiempo__, que es una de las diferentes variables predictoras que podemos considerar en este proceso. 
 
 Otras variables que planteamos como variables independientes serían __distrito, sexo, nacionalidad y el rango de la edad__ de los usuarios que realizan la gestión de la urgencia.
 
