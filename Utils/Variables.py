@@ -16,8 +16,8 @@ test=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_te
 '''
 Ficheros para modelar en DataFrames con resample
 '''
-#train=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_train_balanced.csv',sep=',')
-#test=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_test_balanced.csv',sep=',')
+train=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_train_balanced.csv',sep=',')
+test=pd.read_csv('E:\Bootcamp_22\Javier\Repositorios\Machine_Learning\data\df_test_balanced.csv',sep=',')
 
 
 
